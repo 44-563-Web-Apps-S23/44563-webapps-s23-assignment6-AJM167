@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>images of plants</title>
+
+    </head>
+ 
+<body>
+
+
+<h2>Ashajyothi shows currency conversions</h2>
+
+<form>
+    <label for="form1_apple">Enter base amount </label>
+    <input type="number" id="base_element" name="form1_apple" min=10 max=50 step=2 value=50> <br>
+
+    <label for="form1_cat">Enter the conversion rate </label>
+    <input type="number" id="conversion_element" name="form1_cat" autofocus value="35"> <br>
+
+    <input type="button" onclick="convert()" value="Show Conversions">
+</form>
+
+<p id="result">Displays conversion</p>
+
+
+
+
+<input type="button" class="btn btn-primary" onclick="chooseOp()" value="Get values from radio group">
+<p id="results">Radio Buttons</p>
+</div>
+
+<script>
+
+    var toShow = '';
+    function convert() {
+        var ashal = document.getElementById("base_element").value;
+        var asha2 = document.getElementById("conversion_element").value;
+        var cases1 = asha1;
+        for (let q = 1; q <= 5; q++) {
+            console.log(2 ** q);
+
+            toShow = toShow + asha1 + ' is ' + Math.round(asha1 * asha2 * 100) / 100 + '; ';
+            baseelmnt = base1 * (2 ** q);
+
+        }
+        document.getElementById("results").innerHTML = 'Conversions are: ' + toShow;
+
+    }
+</script>
+
+
+</body>
+</html> 
